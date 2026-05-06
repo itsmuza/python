@@ -1,5 +1,4 @@
-// getReverse("hello") return "olleh"
-
+// TASK - E
 function getReverse(data) {
     return data.split("").reverse().join("");
 }
