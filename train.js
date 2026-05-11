@@ -1,4 +1,22 @@
+// TASK - G
+function getHighestIndex(numbers) {
+    temp = numbers[0]
+    highest_index = 0
+    for (let i in numbers) {
+        if (numbers[i] > temp) {
+            highest_index = i 
+            temp = numbers[i]
+        }
+    }
+    return highest_index
+}
+
+console.log(getHighestIndex([44, 5, 21, 100, 12, 21, 8, 22]))
+
+
+
 // TASK - F
+/*
 function findDoublers(data) {
     let start_index = 0
     for (let i in data) {
@@ -9,8 +27,8 @@ function findDoublers(data) {
     }
     return false
 }
-
 console.log(findDoublers("hello"));
+*/
 
 
 // TASK - E
