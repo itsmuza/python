@@ -24,5 +24,45 @@ print("c is d:", c is d)  # chechs reference
 e = d  # e gets d's reference
 print("e is d:", e is d)
 
+
 e["name"] = "michael"
 print(d["name"])
+
+
+print("======== conditions =========")
+
+x = 15
+if x > 50:
+    print("case A")
+elif x > 10:
+    print("case B")
+else:
+    print("case C")
+
+
+age = 18
+person = None
+if age > 20:
+    person = "Adult"
+else:
+    person = "minor"
+print("person:", person)
+
+person = "Adult" if age > 20 else "minor"
+
+print("person:", person)
+
+
+is_student = True
+is_admit = False
+is_guest = True
+is_parent = True
+
+if is_student:
+    print("Im student")
+elif is_admit:
+    print("i am admin")
+elif is_guest or is_parent:
+    print("guest or parent")
+else:
+    print("other case")
