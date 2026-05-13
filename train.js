@@ -1,4 +1,18 @@
+// Task - H
+function getPositive(data) {
+    arr = []
+    for (let n of data) {
+        if (n >= 0) arr.push(n)
+    }
+    return arr.join("")
+}
+
+console.log(getPositive([1, -4, 2]))
+
+
+
 // TASK - G
+/*
 function getHighestIndex(numbers) {
     temp = numbers[0]
     highest_index = 0
@@ -12,7 +26,7 @@ function getHighestIndex(numbers) {
 }
 
 console.log(getHighestIndex([44, 5, 21, 100, 12, 21, 8, 22]))
-
+*/
 
 
 // TASK - F
