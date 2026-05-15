@@ -1,6 +1,6 @@
 // Task - H
 function getPositive(data) {
-    arr = []
+    let arr = []
     for (let n of data) {
         if (n >= 0) arr.push(n)
     }
