@@ -21,7 +21,7 @@ numbers.remove(3)
 print(numbers)
 del numbers[0:2]
 print(numbers)
-print(numbers.index(4))
+print(numbers.index(4))  # immutable
 numbers.clear()
 print(numbers)
 
@@ -34,6 +34,52 @@ print(nums)
 
 
 numbs = [5, 2, 12, 61]
-new_numbs = sorted(numbs)
+new_numbs = sorted(numbs)  # immutable
 print(numbs)
 print(new_numbs)
+
+
+print("lambda function")
+def calculate(a, b): return a+b
+
+
+print(calculate(1, 2))
+
+print()
+
+people = [
+    ('muza', 25),
+    ('steve', 30),
+    ('ali', 12),
+    ('robert', 50)
+]
+
+people.sort(key=lambda person: person[1])
+print(people)
+
+people.sort(key=lambda person: person[0])
+print(people)
+
+print()
+
+animals = ['dog', 'fish', 'dog']
+
+for index, value in enumerate(animals):
+    print(index, value)
+
+print()
+
+cars = [
+    ('ferrari', 78),
+    ('toyota', 87),
+    ('audi', 116),
+    ('bmw', 109),
+    ('pagani', 33)
+]
+
+result = map(lambda car: car[0], cars)
+print(list(result))
+print()
+
+result = filter(lambda car: car[1] > 50, cars)
+print(list(result))
