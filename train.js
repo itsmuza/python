@@ -1,13 +1,36 @@
-// Task - H
-function getPositive(data) {
-    let arr = []
+// task - I
+function majorityElement(data) {
+    let dict1 = {}
     for (let n of data) {
-        if (n >= 0) arr.push(n)
+        if (n in dict1) dict1[n] += 1
+        else dict1[n] = 1
     }
-    return arr.join("")
+
+    most_exist = 0
+    for (let key in dict1) {
+        if (dict1[key] > most_exist) most_exist = dict1[key]
+    }
+    
+    for (let key in dict1) {
+        if (dict1[key] === most_exist) return parseInt(key)
+    }
 }
 
-console.log(getPositive([1, -4, 2]))
+console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]))
+
+
+
+
+// Task - H
+// function getPositive(data) {
+//     let arr = []
+//     for (let n of data) {
+//         if (n >= 0) arr.push(n)
+//     }
+//     return arr.join("")
+// }
+
+// console.log(getPositive([1, -4, 2]))
 
 
 
