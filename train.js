@@ -1,4 +1,26 @@
+// task - J
+function findLongestWord(data) {
+    words = data.split(" ")
+    console.log(words)
+    longest = 0
+    result = ''
+    for (let word of words) {
+        if (word.length > longest) {
+            longest = word.length
+            result = word
+        }
+    }
+    return result
+}
+
+console.log(findLongestWord("I came from Uzbekistan!"))
+
+
+
+
+
 // task - I
+/*
 function majorityElement(data) {
     let dict1 = {}
     for (let n of data) {
@@ -17,6 +39,7 @@ function majorityElement(data) {
 }
 
 console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]))
+*/
 
 
 

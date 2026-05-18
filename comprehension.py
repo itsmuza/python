@@ -29,5 +29,5 @@ numbs = [1, 2, 3, 5, 1, 21, 2, 4, 1]
 set_numbs = {*numbs}  # a version
 print("set_numbs:", set_numbs)
 
-dict_people = {key: value for key, value in people}
+dict_people = {key: value for key, value in people}  # b version
 print("dict_people:", dict_people)
