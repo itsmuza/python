@@ -26,5 +26,4 @@ b = {20, 40}
 union = a | b  # 10, 20, 50, 40
 inter = a & b  # 20
 difference = a - b  # 10, 50
-symmetric_difference = a ^ b
-print(symmetric_difference)
+symmetric_difference = a ^ b # 40, 10, 50
