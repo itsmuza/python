@@ -33,3 +33,16 @@ git pull origin main
 - Comprehension
 - Debugging
 - ...
+
+## pip3 commands:
+
+'''
+macos pip3 | windows pip
+
+    pip3 list
+    pip3 install pillow
+    pip3 uninstall pillow
+    pip show pillow
+    pip freeze > requirements.txt
+
+'''
